@@ -8,12 +8,15 @@
   },
   "author": "Johan 't Hart",
   "license": "ISC",
+  "dependencies": {
+    "rxjs": "*",
+    "@angular/core": "*"
+  },
   "devDependencies": {
     "typescript": "^2.6.1"
   },
   "peerDependencies": {
     "rxjs": "*",
-    "@angular/testing": "*",
     "@angular/core": "*"
   }
 }
