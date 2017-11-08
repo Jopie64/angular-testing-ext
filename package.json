@@ -2,7 +2,8 @@
   "name": "angular-testing-ext",
   "version": "1.0.0",
   "description": "Extending angular testing with some usefull functions",
-  "main": "index.ts",
+  "main": "./dist/out-tsc/index.js",
+  "types": "./dist/out-tsc/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
