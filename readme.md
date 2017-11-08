@@ -1,6 +1,6 @@
 # Rationale
 
-This library aims to provide helpers to test Angular apps that are not provided natively. For now it especially focusses on timing issues with rx.
+This library aims to provide helpers to test Angular apps that are not provided natively. For now it especially focusses on timing issues with [rx](http://reactivex.io/rxjs/).
 
 # Features
 
@@ -29,6 +29,7 @@ describe('my suite', () => {
 ```
 
 This test would fail. That is because the rx `delay()` operator doesn't only use `setTimeout()` or `setInterval()` internally, but also uses the rx Scheduler `now()` method to check whether time has really passed. By default it uses `Scheduler.async` of which the `now()` function resolves to getting the current time.
+See [angular issue #8678](https://github.com/angular/angular/issues/8678)
 
 ## Solution provided by this lib
 
