@@ -2,12 +2,14 @@
     "compileOnSave": false,
     "compilerOptions": {
       "outDir": "./dist/out-tsc",
+      "rootDir": "./src",
       "sourceMap": true,
       "declaration": true,
-      "moduleResolution": "node",
+      "moduleResolution": "bundler",
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
-      "target": "es5",
+      "module": "esnext",
+      "target": "es2022",
       "typeRoots": [
         "node_modules/@types"
       ],

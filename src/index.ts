@@ -1,10 +1,9 @@
 import { tick as origTick } from '@angular/core/testing';
-import { Scheduler } from 'rxjs/Rx';
-import 'rxjs/scheduler/AsyncScheduler';
+import { asyncScheduler } from 'rxjs';
 
 let fakeTime = (new Date()).getMilliseconds();
 
-Scheduler.async['now'] = () => fakeTime;
+asyncScheduler.now = () => fakeTime;
 
 export const tick = (n?: number) => {
     if (!n) {

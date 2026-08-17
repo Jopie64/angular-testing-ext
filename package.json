@@ -5,7 +5,7 @@
   "main": "./dist/out-tsc/index.js",
   "types": "./dist/out-tsc/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "author": "Johan 't Hart",
   "license": "ISC",
@@ -14,7 +14,7 @@
     "@angular/core": "*"
   },
   "devDependencies": {
-    "typescript": "^2.6.1"
+    "typescript": "~6.0.3"
   },
   "peerDependencies": {
     "rxjs": "*",
